@@ -1,6 +1,6 @@
 <?php 
 class Fipe {
-	private __baseUrl = "http://www2.fipe.org.br/IndicesConsulta";
+	private $__baseUrl = "http://www2.fipe.org.br/IndicesConsulta";
 	private $anoReferenciaInicial = 2015;
 	private $mesReferenciaInicial = 5;
 	private $codigoTipoVeiculo = 1;
@@ -13,7 +13,7 @@ class Fipe {
 	private $modeloCodigoExterno;
 
 	public function Fipe() {
-		carregarTabelaReferencia();
+		$this->carregarTabelaReferencia();
 	}
 
 	private function carregarTabelaReferencia () {
